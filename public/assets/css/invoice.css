@@ -1,0 +1,27 @@
+th {
+    font-weight: 500;
+    font-size: 9px !important;
+  }
+
+  td {
+    font-size: 9px !important;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    margin-right: 5px !important;
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  @page { size: auto;  margin: 0mm; }
