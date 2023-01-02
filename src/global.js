@@ -1,11 +1,12 @@
 const subdomain = window.location.host.split('.')[1] ? window.location.host.split('.')[0] : false;
-export const baseApiUrl = process.env.NODE_ENV === 'dev' ? `http://b-front1.host.local/api` : "https://micro-api.ttmlive.com/api";
+export const baseApiUrl = `http://backend1.host.local/api`;
 //\export const baseApiUrl = `https://b-${subdomain}.ttmlive.com/api`;
 export const autoLoginTime = process.env.NODE_ENV === 'dev' ? 9000000 : 400000;
 export const roles = {
     ADMIN: 'SA',
     GERENTE: 'Gerente'
 }
+
 export const authorities = {
     DASHBOARD_VIEW: "dashboard-view",
     SETTINGS_VIEW: "setting-view",
